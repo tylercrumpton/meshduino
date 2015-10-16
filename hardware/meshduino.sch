@@ -30,7 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:crumpschemes
-LIBS:stow-minipcie-single-cache
+LIBS:meshduino-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -123,8 +123,6 @@ F 3 "" H 4350 4350 30  0000 C CNN
 	1    4350 4350
 	1    0    0    -1  
 $EndComp
-Text GLabel 4500 4100 2    60   Input ~ 0
-FT_3v3
 Text GLabel 7550 3800 2    60   Output ~ 0
 RESET
 Text GLabel 1900 3950 0    60   Input ~ 0
@@ -186,17 +184,6 @@ F 2 "" H 7050 5050 60  0000 C CNN
 F 3 "" H 7050 5050 60  0000 C CNN
 	1    7050 5050
 	1    0    0    -1  
-$EndComp
-$Comp
-L CRYSTAL 12MHz1
-U 1 1 55FA6B1E
-P 5150 3950
-F 0 "12MHz1" H 5150 4100 60  0000 C CNN
-F 1 "CRYSTAL" H 5150 3800 60  0000 C CNN
-F 2 "Crystals:Crystal_HC49-SD_SMD" H 5150 3950 60  0001 C CNN
-F 3 "" H 5150 3950 60  0000 C CNN
-	1    5150 3950
-	0    1    1    0   
 $EndComp
 Text GLabel 5550 4500 0    60   Output ~ 0
 FT_3v3
@@ -333,18 +320,6 @@ Connection ~ 6450 4950
 Wire Wire Line
 	7050 4950 7050 5050
 Connection ~ 6900 4950
-Wire Wire Line
-	5150 3650 5450 3650
-Wire Wire Line
-	5450 3650 5450 3900
-Wire Wire Line
-	5450 3900 5650 3900
-Wire Wire Line
-	5150 4250 5450 4250
-Wire Wire Line
-	5450 4250 5450 4000
-Wire Wire Line
-	5450 4000 5650 4000
 Wire Wire Line
 	5650 4200 5650 4550
 Wire Wire Line
@@ -590,6 +565,6 @@ Wire Wire Line
 	6400 1900 6400 1950
 Wire Wire Line
 	6300 1950 6300 1900
-Connection ~ 5150 4250
-Connection ~ 5150 3650
+NoConn ~ 5650 3900
+NoConn ~ 5650 4000
 $EndSCHEMATC
