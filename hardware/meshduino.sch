@@ -57,17 +57,6 @@ F 3 "" H 3750 5050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mPCIe P1
-U 1 1 55C19570
-P 9350 3500
-F 0 "P1" H 9350 4900 60  0000 C CNN
-F 1 "mPCIe" H 9350 1500 60  0000 C CNN
-F 2 "_CrumpPrints:MPCIe_full_card" H 9350 3500 60  0001 C CNN
-F 3 "" H 9350 3500 60  0000 C CNN
-	1    9350 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L FT232RL U2
 U 1 1 55C1978C
 P 6600 3700
@@ -78,17 +67,11 @@ F 3 "" H 6600 3700 60  0000 C CNN
 	1    6600 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 10300 2700 2    60   Output ~ 0
-USB_D+
-Text GLabel 10300 2800 2    60   Output ~ 0
-USB_D-
 Text GLabel 5600 3400 0    60   Input ~ 0
 USB_D+
 Text GLabel 5600 3300 0    60   Input ~ 0
 USB_D-
 Text GLabel 5600 3050 0    60   Input ~ 0
-VCC
-Text GLabel 8400 3800 0    60   Output ~ 0
 VCC
 Text GLabel 2250 3250 0    60   Input ~ 0
 FT_3v3
@@ -200,18 +183,6 @@ F 3 "" H 5650 4750 60  0000 C CNN
 $EndComp
 Text GLabel 5600 2950 0    60   Input ~ 0
 FT_3v3
-Text GLabel 10300 2300 2    60   Input ~ 0
-LED_WPAN
-Text GLabel 10300 2400 2    60   Input ~ 0
-LED_WLAN
-Text GLabel 10300 2500 2    60   Input ~ 0
-LED_WWAN
-Text GLabel 3850 5550 2    60   Output ~ 0
-LED_WWAN
-Text GLabel 3850 5350 2    60   Output ~ 0
-LED_WLAN
-Text GLabel 3850 5250 2    60   Output ~ 0
-LED_WPAN
 $Comp
 L GND #PWR02
 U 1 1 55FF1FC3
@@ -223,27 +194,10 @@ F 3 "" H 2150 3100 60  0000 C CNN
 	1    2150 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR03
-U 1 1 55FF26A9
-P 8300 3650
-F 0 "#PWR03" H 8300 3650 30  0001 C CNN
-F 1 "GND" H 8300 3580 30  0001 C CNN
-F 2 "" H 8300 3650 60  0000 C CNN
-F 3 "" H 8300 3650 60  0000 C CNN
-	1    8300 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5600 3300 5650 3300
 Wire Wire Line
 	5600 3400 5650 3400
-Wire Wire Line
-	10250 2700 10300 2700
-Wire Wire Line
-	10250 2800 10300 2800
-Wire Wire Line
-	8400 3800 8450 3800
 Wire Wire Line
 	5600 3050 5650 3050
 Wire Wire Line
@@ -303,7 +257,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 3150 3800 3150
 Wire Wire Line
-	6450 4900 6450 4950
+	6450 4950 6450 4900
 Wire Wire Line
 	5650 4950 7050 4950
 Wire Wire Line
@@ -333,78 +287,13 @@ Wire Wire Line
 Wire Wire Line
 	4050 2400 4150 2400
 Wire Wire Line
-	10250 2500 10300 2500
-Wire Wire Line
-	10250 2400 10300 2400
-Wire Wire Line
-	10250 2300 10300 2300
-Wire Wire Line
 	3800 5250 3850 5250
 Wire Wire Line
 	3800 5350 3850 5350
 Wire Wire Line
 	3800 5550 3850 5550
 Wire Wire Line
-	8450 2300 8400 2300
-Wire Wire Line
-	8400 2300 8400 3600
-Wire Wire Line
-	8400 2400 8450 2400
-Wire Wire Line
-	8400 2500 8450 2500
-Connection ~ 8400 2400
-Wire Wire Line
-	8400 2600 8450 2600
-Connection ~ 8400 2500
-Wire Wire Line
-	8400 2700 8450 2700
-Connection ~ 8400 2600
-Wire Wire Line
-	8400 2800 8450 2800
-Connection ~ 8400 2700
-Wire Wire Line
-	8400 2900 8450 2900
-Connection ~ 8400 2800
-Wire Wire Line
-	8400 3000 8450 3000
-Connection ~ 8400 2900
-Wire Wire Line
-	8400 3100 8450 3100
-Connection ~ 8400 3000
-Wire Wire Line
-	8400 3200 8450 3200
-Connection ~ 8400 3100
-Wire Wire Line
-	8400 3300 8450 3300
-Connection ~ 8400 3200
-Wire Wire Line
-	8400 3400 8450 3400
-Connection ~ 8400 3300
-Wire Wire Line
-	8400 3500 8450 3500
-Connection ~ 8400 3400
-Wire Wire Line
-	8300 3600 8450 3600
-Connection ~ 8400 3500
-Wire Wire Line
-	8450 3800 8450 3900
-Wire Wire Line
-	8400 3900 8400 4200
-Wire Wire Line
-	8400 4000 8450 4000
-Wire Wire Line
-	8450 3900 8400 3900
-Wire Wire Line
-	8400 4100 8450 4100
-Connection ~ 8400 4000
-Wire Wire Line
-	8250 4200 8450 4200
-Connection ~ 8400 4100
-Wire Wire Line
-	8300 3600 8300 3650
-Connection ~ 8400 3600
-Wire Wire Line
-	2300 3050 2150 3050
+	2150 3050 2300 3050
 Wire Wire Line
 	2150 3050 2150 3100
 Wire Wire Line
@@ -433,24 +322,6 @@ Connection ~ 2250 2450
 Wire Wire Line
 	2250 2250 2300 2250
 Connection ~ 2250 2350
-NoConn ~ 10250 3400
-NoConn ~ 10250 3500
-NoConn ~ 10250 3700
-NoConn ~ 10250 3900
-NoConn ~ 10250 4000
-NoConn ~ 10250 4200
-NoConn ~ 10250 4300
-NoConn ~ 10250 4400
-NoConn ~ 10250 4500
-NoConn ~ 10250 4600
-NoConn ~ 10250 4800
-NoConn ~ 10250 4900
-NoConn ~ 10250 5000
-NoConn ~ 10250 5100
-NoConn ~ 10250 5200
-NoConn ~ 8450 4600
-NoConn ~ 8450 4500
-NoConn ~ 8450 4400
 NoConn ~ 7500 3400
 NoConn ~ 7500 3500
 NoConn ~ 7500 3600
@@ -484,36 +355,10 @@ NoConn ~ 3800 5750
 NoConn ~ 3800 5050
 NoConn ~ 3800 5150
 $Comp
-L PWR_FLAG #FLG04
-U 1 1 55FF3712
-P 8400 2300
-F 0 "#FLG04" H 8400 2395 30  0001 C CNN
-F 1 "PWR_FLAG" H 8400 2480 30  0000 C CNN
-F 2 "" H 8400 2300 60  0000 C CNN
-F 3 "" H 8400 2300 60  0000 C CNN
-	1    8400 2300
-	1    0    0    -1  
-$EndComp
-Connection ~ 8400 2300
-$Comp
-L PWR_FLAG #FLG05
-U 1 1 55FF3839
-P 8250 4150
-F 0 "#FLG05" H 8250 4245 30  0001 C CNN
-F 1 "PWR_FLAG" H 8250 4330 30  0000 C CNN
-F 2 "" H 8250 4150 60  0000 C CNN
-F 3 "" H 8250 4150 60  0000 C CNN
-	1    8250 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8250 4150 8250 4200
-Connection ~ 8400 4200
-$Comp
-L PWR_FLAG #FLG06
+L PWR_FLAG #FLG03
 U 1 1 55FF4264
 P 5650 4200
-F 0 "#FLG06" H 5650 4295 30  0001 C CNN
+F 0 "#FLG03" H 5650 4295 30  0001 C CNN
 F 1 "PWR_FLAG" H 5650 4380 30  0000 C CNN
 F 2 "" H 5650 4200 60  0000 C CNN
 F 3 "" H 5650 4200 60  0000 C CNN
@@ -522,49 +367,72 @@ F 3 "" H 5650 4200 60  0000 C CNN
 $EndComp
 Connection ~ 5650 4200
 $Comp
-L CONN_01X05 P2
-U 1 1 55FF44AF
-P 6500 2150
-F 0 "P2" H 6500 2450 50  0000 C CNN
-F 1 "USB" V 6600 2150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 6500 2150 60  0001 C CNN
-F 3 "" H 6500 2150 60  0000 C CNN
-	1    6500 2150
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR07
+L GND #PWR04
 U 1 1 55FF454C
-P 6800 1850
-F 0 "#PWR07" H 6800 1850 30  0001 C CNN
-F 1 "GND" H 6800 1780 30  0001 C CNN
-F 2 "" H 6800 1850 60  0000 C CNN
-F 3 "" H 6800 1850 60  0000 C CNN
-	1    6800 1850
+P 6200 2500
+F 0 "#PWR04" H 6200 2500 30  0001 C CNN
+F 1 "GND" H 6200 2430 30  0001 C CNN
+F 2 "" H 6200 2500 60  0000 C CNN
+F 3 "" H 6200 2500 60  0000 C CNN
+	1    6200 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 6500 1900 1    60   Input ~ 0
+Text GLabel 6250 2100 0    60   Input ~ 0
 VCC
-Text GLabel 6600 1900 1    60   Input ~ 0
-FT_3v3
-Text GLabel 6400 1900 1    60   Input ~ 0
+Text GLabel 7100 2250 2    60   Input ~ 0
 USB_D-
-Text GLabel 6300 1900 1    60   Input ~ 0
+Text GLabel 7100 2100 2    60   Input ~ 0
 USB_D+
-Wire Wire Line
-	6800 1850 6800 1800
-Wire Wire Line
-	6800 1800 6700 1800
-Wire Wire Line
-	6700 1800 6700 1950
-Wire Wire Line
-	6600 1900 6600 1950
-Wire Wire Line
-	6500 1950 6500 1900
-Wire Wire Line
-	6400 1900 6400 1950
-Wire Wire Line
-	6300 1950 6300 1900
 NoConn ~ 5650 3900
 NoConn ~ 5650 4000
+$Comp
+L USB J1
+U 1 1 56207A99
+P 6700 1900
+F 0 "J1" H 6650 2300 60  0000 C CNN
+F 1 "USB" V 6450 2050 60  0000 C CNN
+F 2 "" H 6700 1900 60  0000 C CNN
+F 3 "" H 6700 1900 60  0000 C CNN
+	1    6700 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2100 6300 2100
+Wire Wire Line
+	6300 2250 6200 2250
+Wire Wire Line
+	6200 2250 6200 2500
+Wire Wire Line
+	6300 2350 6200 2350
+Connection ~ 6200 2350
+Wire Wire Line
+	7050 2100 7100 2100
+Wire Wire Line
+	7050 2250 7100 2250
+Wire Wire Line
+	7050 2350 7100 2350
+Wire Wire Line
+	7100 2350 7100 2450
+Wire Wire Line
+	7100 2450 6200 2450
+Connection ~ 6200 2450
+NoConn ~ 3800 5250
+NoConn ~ 3800 5350
+NoConn ~ 3800 5550
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 56208562
+P 6050 2400
+F 0 "#FLG05" H 6050 2495 30  0001 C CNN
+F 1 "PWR_FLAG" H 6050 2580 30  0000 C CNN
+F 2 "" H 6050 2400 60  0000 C CNN
+F 3 "" H 6050 2400 60  0000 C CNN
+	1    6050 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2400 6200 2400
+Connection ~ 6200 2400
+Text GLabel 4500 4100 2    60   Input ~ 0
+FT_3v3
 $EndSCHEMATC
