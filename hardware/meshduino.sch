@@ -435,4 +435,173 @@ Wire Wire Line
 Connection ~ 6200 2400
 Text GLabel 4500 4100 2    60   Input ~ 0
 FT_3v3
+$Comp
+L CONN_01X06 P?
+U 1 1 56208AD2
+P 9150 4350
+F 0 "P?" H 9150 4700 50  0000 C CNN
+F 1 "CONN_01X06" V 9250 4350 50  0000 C CNN
+F 2 "" H 9150 4350 60  0000 C CNN
+F 3 "" H 9150 4350 60  0000 C CNN
+	1    9150 4350
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X08 P?
+U 1 1 56208B19
+P 9150 3500
+F 0 "P?" H 9150 3950 50  0000 C CNN
+F 1 "CONN_01X08" V 9250 3500 50  0000 C CNN
+F 2 "" H 9150 3500 60  0000 C CNN
+F 3 "" H 9150 3500 60  0000 C CNN
+	1    9150 3500
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X08 P?
+U 1 1 56208BBE
+P 10000 4250
+F 0 "P?" H 10000 4700 50  0000 C CNN
+F 1 "CONN_01X08" V 10100 4250 50  0000 C CNN
+F 2 "" H 10000 4250 60  0000 C CNN
+F 3 "" H 10000 4250 60  0000 C CNN
+	1    10000 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X10 P?
+U 1 1 56208C0F
+P 10000 3250
+F 0 "P?" H 10000 3800 50  0000 C CNN
+F 1 "CONN_01X10" V 10100 3250 50  0000 C CNN
+F 2 "" H 10000 3250 60  0000 C CNN
+F 3 "" H 10000 3250 60  0000 C CNN
+	1    10000 3250
+	-1   0    0    1   
+$EndComp
+Text GLabel 10300 4600 2    60   Input ~ 0
+IO0
+Text GLabel 10300 4500 2    60   Input ~ 0
+IO1
+Text GLabel 10300 4400 2    60   Input ~ 0
+IO2
+Text GLabel 10300 4300 2    60   Input ~ 0
+IO3
+Text GLabel 10300 4200 2    60   Input ~ 0
+IO4
+Text GLabel 10300 4100 2    60   Input ~ 0
+IO5
+Text GLabel 10300 4000 2    60   Input ~ 0
+IO6
+Text GLabel 10300 3900 2    60   Input ~ 0
+IO7
+Text GLabel 10300 3700 2    60   Input ~ 0
+IO8
+Text GLabel 10300 3600 2    60   Input ~ 0
+IO9
+Text GLabel 10300 3500 2    60   Input ~ 0
+IO10
+Text GLabel 10300 3400 2    60   Input ~ 0
+IO11
+Text GLabel 10300 3300 2    60   Input ~ 0
+IO12
+Text GLabel 10300 3200 2    60   Input ~ 0
+IO13
+Text GLabel 10300 3100 2    60   Input ~ 0
+GND
+Text GLabel 10300 3000 2    60   Input ~ 0
+AREF
+Text GLabel 10300 2900 2    60   Input ~ 0
+SDA
+Text GLabel 10300 2800 2    60   Input ~ 0
+SCL
+Text GLabel 8850 4600 0    60   Input ~ 0
+AD0
+Text GLabel 8850 4500 0    60   Input ~ 0
+AD1
+Text GLabel 8850 4400 0    60   Input ~ 0
+AD2
+Text GLabel 8850 4300 0    60   Input ~ 0
+AD3
+Text GLabel 8850 4200 0    60   Input ~ 0
+AD4
+Text GLabel 8850 4100 0    60   Input ~ 0
+AD5
+Text GLabel 8850 3150 0    60   Input ~ 0
+VIN
+Text GLabel 8850 3250 0    60   Input ~ 0
+GND
+Text GLabel 8850 3350 0    60   Input ~ 0
+GND
+Text GLabel 8850 3450 0    60   Input ~ 0
+5V
+Text GLabel 8850 3550 0    60   Input ~ 0
+3v3
+Text GLabel 8850 3650 0    60   Input ~ 0
+RESET
+Text GLabel 8850 3750 0    60   Input ~ 0
+5V
+NoConn ~ 8950 3850
+Wire Wire Line
+	8850 3150 8950 3150
+Wire Wire Line
+	8950 3250 8850 3250
+Wire Wire Line
+	8850 3350 8950 3350
+Wire Wire Line
+	8950 3450 8850 3450
+Wire Wire Line
+	8850 3550 8950 3550
+Wire Wire Line
+	8950 3650 8850 3650
+Wire Wire Line
+	8850 3750 8950 3750
+Wire Wire Line
+	8950 4100 8850 4100
+Wire Wire Line
+	8850 4200 8950 4200
+Wire Wire Line
+	8950 4300 8850 4300
+Wire Wire Line
+	8850 4400 8950 4400
+Wire Wire Line
+	8950 4500 8850 4500
+Wire Wire Line
+	8850 4600 8950 4600
+Wire Wire Line
+	10200 4600 10300 4600
+Wire Wire Line
+	10300 4500 10200 4500
+Wire Wire Line
+	10200 4400 10300 4400
+Wire Wire Line
+	10300 4300 10200 4300
+Wire Wire Line
+	10200 4200 10300 4200
+Wire Wire Line
+	10300 4100 10200 4100
+Wire Wire Line
+	10200 4000 10300 4000
+Wire Wire Line
+	10300 3900 10200 3900
+Wire Wire Line
+	10200 3700 10300 3700
+Wire Wire Line
+	10300 3600 10200 3600
+Wire Wire Line
+	10200 3500 10300 3500
+Wire Wire Line
+	10300 3400 10200 3400
+Wire Wire Line
+	10200 3300 10300 3300
+Wire Wire Line
+	10300 3200 10200 3200
+Wire Wire Line
+	10200 3100 10300 3100
+Wire Wire Line
+	10300 3000 10200 3000
+Wire Wire Line
+	10200 2900 10300 2900
+Wire Wire Line
+	10300 2800 10200 2800
 $EndSCHEMATC
